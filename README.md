@@ -8,7 +8,7 @@ through [GSA Auctions](https://gsaauctions.gov), aggregated by
 - **Date range (auction end):** 2026-05-06 → 2026-06-09
 - **States/territories:** 54
 - **Categories:** 10
-- **Lots with a recorded bid:** 2,736
+- **Lots with a recorded bid:** 2,730
 - **Generated:** 2026-06-11
 - **Schema version:** 1.0
 - **License:** [CC-BY-4.0](./LICENSE) — free to use **with attribution to GovAuctions (https://govauctions.app)**
