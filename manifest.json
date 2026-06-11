@@ -1,0 +1,33 @@
+{
+  "name": "U.S. Government (GSA) Surplus Auction Dataset",
+  "publisher": "GovAuctions (https://govauctions.app)",
+  "sourcePage": "https://govauctions.app/research/state-of-government-surplus",
+  "license": "CC-BY-4.0",
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-06-11",
+  "rowCount": 4195,
+  "columns": [
+    "id",
+    "title",
+    "category",
+    "condition",
+    "seller_type",
+    "state",
+    "city",
+    "zip",
+    "currency",
+    "starting_bid",
+    "current_or_final_bid",
+    "bid_count",
+    "buyer_premium_pct",
+    "sold",
+    "ended_at",
+    "source_url"
+  ],
+  "coverage": {
+    "source": "gsa",
+    "country": "US",
+    "earliestEnded": "2026-05-06",
+    "latestEnded": "2026-06-09"
+  }
+}
