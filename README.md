@@ -4,12 +4,12 @@ A free, open dataset of completed **U.S. federal surplus auction lots** sold
 through [GSA Auctions](https://gsaauctions.gov), aggregated by
 [GovAuctions](https://govauctions.app).
 
-- **Rows:** 5,971 lots
-- **Date range (auction end):** 2026-05-06 → 2026-06-29
+- **Rows:** 9,352 lots
+- **Date range (auction end):** 2026-05-06 → 2026-07-31
 - **States/territories:** 54
 - **Categories:** 11
-- **Lots with a recorded bid:** 3,820
-- **Generated:** 2026-07-01
+- **Lots with a recorded bid:** 5,861
+- **Generated:** 2026-08-01
 - **Schema version:** 1.0
 - **License:** [CC-BY-4.0](./LICENSE) — free to use **with attribution to GovAuctions (https://govauctions.app)**
 
@@ -60,7 +60,7 @@ filter to lots with a positive sale signal where you need one.
 
 ## Cite this dataset
 
-> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-07-01.
+> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-08-01.
 > Source: https://govauctions.app/research/state-of-government-surplus
 
 Updated monthly. Issues and pull requests welcome.
