@@ -4,14 +4,18 @@ A free, open dataset of completed **U.S. federal surplus auction lots** sold
 through [GSA Auctions](https://gsaauctions.gov), aggregated by
 [GovAuctions](https://govauctions.app).
 
-- **Rows:** 9,352 lots
-- **Date range (auction end):** 2026-05-06 → 2026-07-31
-- **States/territories:** 54
+- **Rows:** 10,015 lots
+- **Date range (auction end):** 2026-05-06 → 2026-08-07
+- **States/territories:** 55
 - **Categories:** 11
-- **Lots with a recorded bid:** 5,861
-- **Generated:** 2026-08-01
+- **Lots with a recorded bid:** 6,398
+- **Generated:** 2026-08-10
 - **Schema version:** 1.0
 - **License:** [CC-BY-4.0](./LICENSE) — free to use **with attribution to GovAuctions (https://govauctions.app)**
+
+![Dot plot of the median winning bid for each category of U.S. federal surplus lot, on a log scale. Vehicles are highest at roughly $3,200; office furniture is lowest at roughly $25.](./assets/median-bid-by-category.png)
+
+![Horizontal bar chart of the 15 states with the most U.S. federal surplus auction lots, by lot count.](./assets/lots-by-state.png)
 
 ## Why this is safe to publish openly
 
@@ -41,7 +45,7 @@ contains no personal information (sellers are federal agencies).
 | `city` | string | Lot location city, when present |
 | `zip` | string | Lot location ZIP, when present |
 | `currency` | string | Always `USD` |
-| `starting_bid` | number | Opening/list price, when present |
+| `starting_bid` | number | Opening/list price. **Currently empty for every row** — GSA does not expose an opening price on the listings we collect. Kept for schema stability; do not treat a blank as $0. |
 | `current_or_final_bid` | number | **Bid level, not a guaranteed sale price** (see below) |
 | `bid_count` | number | Number of bids observed (GSA bid counts are reliable) |
 | `buyer_premium_pct` | number | Buyer's premium percentage, when applicable |
@@ -60,7 +64,7 @@ filter to lots with a positive sale signal where you need one.
 
 ## Cite this dataset
 
-> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-08-01.
+> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-08-10.
 > Source: https://govauctions.app/research/state-of-government-surplus
 
 Updated monthly. Issues and pull requests welcome.
