@@ -4,8 +4,8 @@
   "sourcePage": "https://govauctions.app/research/state-of-government-surplus",
   "license": "CC-BY-4.0",
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-10",
-  "rowCount": 10015,
+  "generatedAt": "2026-09-01",
+  "rowCount": 11694,
   "columns": [
     "id",
     "title",
@@ -28,6 +28,6 @@
     "source": "gsa",
     "country": "US",
     "earliestEnded": "2026-05-06",
-    "latestEnded": "2026-08-07"
+    "latestEnded": "2026-08-31"
   }
 }

@@ -4,12 +4,12 @@ A free, open dataset of completed **U.S. federal surplus auction lots** sold
 through [GSA Auctions](https://gsaauctions.gov), aggregated by
 [GovAuctions](https://govauctions.app).
 
-- **Rows:** 10,015 lots
-- **Date range (auction end):** 2026-05-06 → 2026-08-07
+- **Rows:** 11,694 lots
+- **Date range (auction end):** 2026-05-06 → 2026-08-31
 - **States/territories:** 55
-- **Categories:** 11
-- **Lots with a recorded bid:** 6,398
-- **Generated:** 2026-08-10
+- **Categories:** 17
+- **Lots with a recorded bid:** 7,504
+- **Generated:** 2026-09-01
 - **Schema version:** 1.0
 - **License:** [CC-BY-4.0](./LICENSE) — free to use **with attribution to GovAuctions (https://govauctions.app)**
 
@@ -53,7 +53,7 @@ contains no personal information (sellers are federal agencies).
 | `ended_at` | date | Auction end date (`YYYY-MM-DD`, UTC) |
 | `source_url` | string | Link to the original GSA listing |
 
-**Categories:** `electronics`, `heavy-equipment`, `jewelry`, `medical-scientific`, `military-surplus`, `miscellaneous`, `office-furniture`, `real-estate`, `seized-property`, `tools-industrial`, `vehicles`
+**Categories:** `appliances`, `art-decor`, `building-materials`, `catering-food-service`, `electronics`, `heavy-equipment`, `janitorial-cleaning`, `jewelry`, `medical-scientific`, `military-surplus`, `miscellaneous`, `office-furniture`, `real-estate`, `seized-property`, `sporting-goods`, `tools-industrial`, `vehicles`
 
 ## Important caveat on price
 
@@ -64,7 +64,7 @@ filter to lots with a positive sale signal where you need one.
 
 ## Cite this dataset
 
-> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-08-10.
+> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-09-01.
 > Source: https://govauctions.app/research/state-of-government-surplus
 
 Updated monthly. Issues and pull requests welcome.
