@@ -4,12 +4,12 @@ A free, open dataset of completed **U.S. federal surplus auction lots** sold
 through [GSA Auctions](https://gsaauctions.gov), aggregated by
 [GovAuctions](https://govauctions.app).
 
-- **Rows:** 11,694 lots
-- **Date range (auction end):** 2026-05-06 → 2026-08-31
+- **Rows:** 13,837 lots
+- **Date range (auction end):** 2026-05-06 → 2026-10-08
 - **States/territories:** 55
-- **Categories:** 17
-- **Lots with a recorded bid:** 7,504
-- **Generated:** 2026-09-01
+- **Categories:** 18
+- **Lots with a recorded bid:** 8,910
+- **Generated:** 2026-10-01
 - **Schema version:** 1.0
 - **License:** [CC-BY-4.0](./LICENSE) — free to use **with attribution to GovAuctions (https://govauctions.app)**
 
@@ -45,7 +45,7 @@ contains no personal information (sellers are federal agencies).
 | `city` | string | Lot location city, when present |
 | `zip` | string | Lot location ZIP, when present |
 | `currency` | string | Always `USD` |
-| `starting_bid` | number | Opening/list price. **Currently empty for every row** — GSA does not expose an opening price on the listings we collect. Kept for schema stability; do not treat a blank as $0. |
+| `starting_bid` | number | Opening/list price. Populated for 521 of 13,837 rows |
 | `current_or_final_bid` | number | **Bid level, not a guaranteed sale price** (see below) |
 | `bid_count` | number | Number of bids observed (GSA bid counts are reliable) |
 | `buyer_premium_pct` | number | Buyer's premium percentage, when applicable |
@@ -53,7 +53,7 @@ contains no personal information (sellers are federal agencies).
 | `ended_at` | date | Auction end date (`YYYY-MM-DD`, UTC) |
 | `source_url` | string | Link to the original GSA listing |
 
-**Categories:** `appliances`, `art-decor`, `building-materials`, `catering-food-service`, `electronics`, `heavy-equipment`, `janitorial-cleaning`, `jewelry`, `medical-scientific`, `military-surplus`, `miscellaneous`, `office-furniture`, `real-estate`, `seized-property`, `sporting-goods`, `tools-industrial`, `vehicles`
+**Categories:** `appliances`, `art-decor`, `building-materials`, `catering-food-service`, `collectibles`, `electronics`, `heavy-equipment`, `janitorial-cleaning`, `jewelry`, `medical-scientific`, `military-surplus`, `miscellaneous`, `office-furniture`, `real-estate`, `seized-property`, `sporting-goods`, `tools-industrial`, `vehicles`
 
 ## Important caveat on price
 
@@ -64,7 +64,7 @@ filter to lots with a positive sale signal where you need one.
 
 ## Cite this dataset
 
-> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-09-01.
+> GovAuctions (https://govauctions.app), "U.S. Government (GSA) Surplus Auction Dataset," 2026-10-01.
 > Source: https://govauctions.app/research/state-of-government-surplus
 
 Updated monthly. Issues and pull requests welcome.
